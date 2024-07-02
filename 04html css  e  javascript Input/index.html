@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Informações do Usuário</title>
+  <meta charset="utf-8">
+  <style>
+    .user-info {
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 300px;
+      margin: 20px auto;
+      font-family: Arial, sans-serif;
+    }
+    .user-info h2 {
+      text-align: center;
+    }
+    .user-info p {
+      margin: 5px 0;
+    }
+    .form-group {
+      margin-bottom: 10px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .form-group input {
+      width: calc(100% - 20px);
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+    .form-group button {
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="user-info">
+    <h2>Informações do Usuário</h2>
+    <form id="user-form">
+      <div class="form-group">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="value">Valor:</label>
+        <input type="text" id="value" name="value" required>
+      </div>
+      <div class="form-group">
+        <button type="button" onclick="saveData()">Salvar</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
